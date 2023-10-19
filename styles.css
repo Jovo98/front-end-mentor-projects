@@ -10,8 +10,6 @@ body {
 section {
     margin: 90px;
     display: flex;
-    width: 920px;
-    height: 500px;
     justify-content: center;
     align-items: center;
 }
@@ -87,7 +85,7 @@ button {
     color: #004140;
 }
 
-.button-1:hover, .button-2:hover, .button-3:hover {
+.button-1:active, .button-2:active, .button-3:active {
     background-color: transparent;
     cursor:pointer;
     color: white;
@@ -97,6 +95,9 @@ button {
 
 /*Small screens*/
 @media (min-width: 640px) {
+    body {
+        height: 200vh;
+    }
     section {
         display: flex;
         flex-direction: column;
@@ -126,6 +127,9 @@ button {
 }
 /*Large screens*/
 @media (min-width: 1024px) {
+    body {
+        height: 100vh;
+    }
     section {
         display: flex;
         flex-direction: row;
