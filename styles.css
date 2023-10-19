@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    color: #F2F2F2
+}
+
+body {
+    height: 100%
+}
+
+section {
+    margin: 90px;
+    display: flex;
+    width: 920px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sedans {
+    border-radius: 8px 0 0 8px;
+    background-color: #E28625;
+    color: #E28625;
+}
+
+.suvs {
+    background-color: #006971;
+    color: #006971;
+}
+
+.luxury {
+    border-radius: 0 8px 8px 0;
+    background-color: #004140;
+    color: #004140;
+}
+
+.luxury, .suvs, .sedans {
+    padding: 48px;
+    align-items: baseline;
+    width: 307px;
+    height: 500px;
+    flex-shrink: 0;
+    flex-direction: column;
+    display: flex;
+}
+
+p {
+    font-family: Lexend Deca, sans-serif;
+    font-size: 15px;
+    opacity: 75%;
+    width: 213px;
+    height: 125px;
+    line-height: 25px;
+    margin:0;
+    font-weight: normal;
+}
+.p-luxury {
+    width: 218px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    margin-top:35px;
+    font-family: Big Shoulders Display, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+button {
+    font-family: Lexend Deca, sans-serif;
+    margin-top: 83px;
+    border: none;
+    width: 146px;
+    height: 48px;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.button-1 {
+    color: #E28625;
+}
+.button-2 {
+    color: #006971;
+}
+.button-3 {
+    color: #004140;
+}
+
+.button-1:hover, .button-2:hover, .button-3:hover {
+    background-color: transparent;
+    cursor:pointer;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/*Small screens*/
+@media (min-width: 640px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .luxury {
+        border-radius: 0 0 8px 8px;
+    }
+    .sedans {
+        border-radius: 8px 8px 0 0;
+    }
+}
+/*Medium screens*/
+@media (min-width: 768px) {
+    body {
+        height:200vh;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .luxury {
+        border-radius: 0 0 8px 8px;
+    }
+    .sedans {
+        border-radius: 8px 8px 0 0;
+    }
+}
+/*Large screens*/
+@media (min-width: 1024px) {
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+    .luxury {
+        border-radius: 0 8px 8px 0;
+    }
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+}
+/*Extra Large screens*/
+@media (min-width: 1280px) {
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+    .luxury {
+        border-radius: 0 8px 8px 0;
+    }
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+}
+
