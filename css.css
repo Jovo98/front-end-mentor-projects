@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.main-container {
+    gap: 10px;
+    padding: 28px 1rem 80px;
+    width: 1110px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 28px 1fr 1fr 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "article"
+    "item";
+}
+.header {
+    grid-area: header;
+    height: 28px;
+
+}
+.logo {
+    width: 45px;
+    height: 28px;
+    overflow: visible;
+}
+.container-3 {
+    grid-area: main;
+    padding-top: 2rem;
+
+}
+
+.container {
+    background-color: #00001A;
+    grid-area: article;
+}
+
+.container-2 {
+    grid-area: item;
+}
+.container-3, .container {
+    width: initial;
+}
+
+
+img {
+    grid-area: img;
+}
+
+h1 {
+    grid-area: h1;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #00001A;
+}
+h2 {
+    color: #E9AA52;
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3 {
+    color: #FFFDFA;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+p {
+    color: #C5C6CE;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.evolution {
+    grid-area: evolution;
+}
+button {
+    grid-area: button;
+    color:white;
+    background-color: #F15D51;
+    font-weight: bold;
+    width: 185px;
+    height: 48px;
+}
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+}
+/* Large (lg) */
+@media (min-width: 1024px)
+.main-container {
+    grid-template-columns: 2fr;
+    grid-template-rows: 28px 511px 129px;
+    grid-template-areas:
+    "header header"
+    "main article"
+    "item item";
+}
+.container-3 {
+    width: 730px;
+}
+.container {
+    width: 300px;
+}
+
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}
