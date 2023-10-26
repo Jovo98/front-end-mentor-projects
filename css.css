@@ -133,6 +133,7 @@ nav {
 
     }
     h1 {
+        width: 512px;
         margin-bottom: 48px;
         letter-spacing: -1.1px;
         font-size: 80px;
@@ -151,6 +152,7 @@ nav {
         flex-direction: row-reverse;
     }
    .image-desktop {
+       margin-top: 67px;
        margin-right: 165px;
        display: block;
        width: 480px;
@@ -179,6 +181,7 @@ nav {
         justify-content: flex-start;
     }
     footer {
+        margin-bottom: 122px;
         margin-left: 165px;
     }
     /* Your styles for the large breakpoint here */
