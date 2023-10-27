@@ -18,7 +18,7 @@ body {
     gap: 224px;
 }
 main img {
-    height:281px;
+    height:282px;
     width: 375px;
     margin-bottom: 3rem;
     flex-shrink: 0;
@@ -59,11 +59,14 @@ p {
     margin-bottom: 48px;
 }
 footer {
+    margin-bottom: 94px;
+    margin-top: 48px;
     display: flex;
     flex-direction: row;
     gap: 28px;
-    width: 343px;
+    
     height: 26px;
+    overflow:scroll;
 }
 .image-desktop {
     display: none;
